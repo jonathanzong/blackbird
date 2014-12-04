@@ -1,0 +1,60 @@
+.tangerine {
+	font-family: 'Tangerine', cursive;
+}
+
+.vollkorn {
+	font-family: 'Vollkorn', serif;
+}
+
+body {
+	line-height: 1.5em;
+	background: #F0F0F0;
+}
+
+#background {
+	position: fixed;
+	top:0;
+	z-index: -999;
+}
+
+.text-head {
+	margin-top: 1em;
+}
+
+.text-head p {
+	margin: 12px 0;
+}
+
+#thirteen {
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#blackbird {
+	margin: 32px 16px;
+	font-size: 72px;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.fleft {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+A:active, A:visited , A:link{
+	color: #0ac5f4;
+	text-decoration: none;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+A:hover{color: #999;}
