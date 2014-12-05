@@ -1,11 +1,9 @@
 $(document).ready(function() {
 	var tweenCache = {};
-	$(".columns")
-		.not($(".text-head").parent())
-		.not($("footer").find(".columns"))
-		.click(function(e) {
-			var el = $(this);
+	$(".panel").click(function(e) {
+			var el = $(this).parent(".columns");
 			if (!el.hasClass("expanded")) {
+				$(".expanded").find(".panel").click();
 				el.addClass("expanded");
 				var siblings = el.parent().find(".columns").not(el);
 				siblings.hide();
@@ -22,7 +20,6 @@ $(document).ready(function() {
 			else {
 				var id = el.find(".panel").attr("id");
 				if (tweenCache[id]) {
-					console.log(tweenCache[id]);
 					tweenCache[id].reverse();
 					tweenCache[id] = null;
 				}
