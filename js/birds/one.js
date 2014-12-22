@@ -1,12 +1,8 @@
 // one.js
 
 $(document).ready(function(){
-	// http://stackoverflow.com/questions/10298658/mouse-position-inside-autoscaled-svg
-	// Find your root SVG element
 	var svg = $('.item').filter(':first').find('svg')[0];
 	var S = Snap(svg);
-
-	var pt = svg.createSVGPoint();
 
 	var eye = Snap('ellipse.eye');
 	var eyeX = parseInt($('ellipse.eye').attr('cx'), 10);
