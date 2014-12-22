@@ -5,3 +5,5 @@
 *.swp
 *.out
 .Rhistory
+illustrator/
+illustrator/*
