@@ -12,13 +12,10 @@ $(document).ready(function(){
 	var eyeX = parseInt($('ellipse.eye').attr('cx'), 10);
 	var eyeY = parseInt($('ellipse.eye').attr('cy'), 10);
 
-	var TAU = Math.PI*2;
-
 	S.mousemove(
         function(e, posX, posY){
-            var m = (posY - eyeY) / (posX - eyeX);
-            var theta = (Math.atan(m) + TAU) % TAU;
-            eye.attr({ cx : eyeX + 5*Math.cos(theta), cy : eyeY + 5*Math.sin(theta) });
+            var theta = Math.atan2(posY - eyeY, posX - eyeX);
+            eye.attr({ cx : eyeX + 3*Math.cos(theta), cy : eyeY + 3*Math.sin(theta) });
         }
     );
 });
