@@ -4,9 +4,9 @@ $(document).ready(function(){
 	var svg = $('.item').filter(':first').find('svg')[0];
 	var S = Snap(svg);
 
-	var eye = Snap('ellipse.eye');
-	var eyeX = parseInt($('ellipse.eye').attr('cx'), 10);
-	var eyeY = parseInt($('ellipse.eye').attr('cy'), 10);
+	var eye = Snap('ellipse.eye-1');
+	var eyeX = parseInt($('ellipse.eye-1').attr('cx'), 10);
+	var eyeY = parseInt($('ellipse.eye-1').attr('cy'), 10);
 
 	S.mousemove(
         function(e, posX, posY){
